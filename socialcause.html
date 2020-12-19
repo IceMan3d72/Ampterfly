@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Captain Planet</title>
+    <script>
+		function openPage(pageName) {
+  var x = document.getElementsByClassName("page");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(pageName).style.display = "block";
+}
+	</script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+  </head>
+  <body>
+  
+	<div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button" onclick="openPage('Home')">Home</button>
+		<button class="w3-bar-item w3-button" onclick="openPage('Research')">Research</button>
+	</div> 
+	
+	<div id="Home" class="page">
+    <h1>GoGreen!</h1>
+    <h2></h2>
+    <p>  We all create trash everyday. Most of us don't know where our trash goes. Sure, we've seen videos and pictures of climate change and pollution in the ocean. Did you know there are thing you can do to help? 
+	</p>
+    <!--Code for image. Can also be used for GIF-->
+    <img src="smokingseagull.jpg" alt="seagull with a cigarette" width="750"/>
+    <!--Code for video-->
+	</div>
+	
+	</div>
+	<div id="Research" class="page" style="display:none">
+    <h1>GoGreen!</h1>
+    <h2>Recycle what you use</h2>
+    <p>Reduce your waste by recycling what you use. Most this we buy end up in landfill. It can also end up in the ocean and harm marine wild-life.</p>
+    <!--Code for image. Can also be used for GIF-->
+    <img src="bottledolphin.jpg" alt="bottle dolphin" width="750"/>
+    <!--Code for video-->
+	
+	<p>Reducing your carbon footprint is another great way to reduce pollution. Most people don't know how much carbon foot-print they leave behind.
+	
+	<p><a href="https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/">Click here to find out about your carbon foot-print</a>
+	</p>
+	</div>
+  </body>
+</html>
